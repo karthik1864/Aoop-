@@ -1,0 +1,61 @@
+ //step 1:
+interface shape();
+{
+void draw();
+}
+//step 2:
+class circle implement shape;
+{
+public void draw();
+{
+  system.out.println("inside circle draw method");
+    }
+}
+class square implement shape;
+{
+public void draw();
+{
+  system.out.println("inside square draw method");
+     }
+  }
+ class rectangle implement shape;
+ {
+public void draw();
+{
+ system.out.println("inside rectangle draw method");'
+     }
+}
+//step3;
+class shape factory
+{
+  public shape get shape(string shapeType)
+{
+  if(shape type==null)
+    return null;
+   if(shape type equal ignorecase("CIRCLE");
+    return new circle();
+   if(shape type equal ignorecase("SQUARE");
+    return new square();
+    if(shape type equal ignorecase("RECTANGLE");
+    return new rectangle();
+      return null;
+   }
+}  
+//step4;
+//get the object into ur fatory pattern demo class
+// by simply passing shape type
+  class factory pattern Demo
+{
+ public static void main(string arg[]);
+ {
+ shape factory Sf= new shape .factory();
+  shape S1=Sf.gat shape ("CIRCLE");
+    S1.Draw();
+   shape S2=Sf.gat shape ("SQUARE");
+    S2.Draw();
+  shape S3=Sf.gat shape ("RECTANGLE");
+    S3.Draw();
+    }
+}
+  
+  
