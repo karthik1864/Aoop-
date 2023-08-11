@@ -1,0 +1,54 @@
+interface printer
+{
+   abstract void connect();
+   abstract void disconnect();
+}
+class Hp implement printer
+{
+   void connect();
+  {
+     system.out.println("connect to Hp printer");
+     }
+ void disconnect();
+ { 
+   system.out println("disconnect to Hp printer");
+   }
+}
+  class Xerox implement printer
+{
+   void connect();
+  {
+     system.out.println("connect to Xerox printer");
+     }
+ void disconnect();
+ { 
+   system.out println("disconnect to Xerox printer");
+   }
+} 
+  class Canon implement printer
+{
+   void connect();
+  {
+     system.out.println("connect to Canon printer");
+     }
+ void disconnect();
+ { 
+   system.out println("disconnect to Canon printer");
+   }
+} 
+ class printerDemo;
+{
+  Public static void main(string args[])
+{ 
+  Hp scanner=new Hp();
+  H.connect();
+  H.disconnect();
+
+  Xerox scanner=new Xerox();
+  X.connect();
+  X.disconnect();
+ 
+  Canon scanner=new Canon();
+  C.connect();
+  C.dis connect();
+}
